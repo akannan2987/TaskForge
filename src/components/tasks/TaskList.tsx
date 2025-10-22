@@ -248,13 +248,14 @@ const TaskList: React.FC = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-7xl">
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-6 flex justify-center">
+      <div className="w-full max-w-6xl">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4 sm:mb-0">My Tasks</h1>
-        
+      <div className="flex flex-col items-center mb-6">
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">My Tasks</h1>
+
         {/* Filter buttons */}
-        <div className="flex items-center space-x-2 mb-4 sm:mb-0">
+        <div className="flex items-center space-x-2">
           <Filter className="h-4 w-4 text-gray-400" />
           <Button
             variant="outline"
@@ -356,6 +357,7 @@ const TaskList: React.FC = () => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
+      </div>
     </div>
   );
 };
