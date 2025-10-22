@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils';
 const Navigation: React.FC = () => {
   return (
     <nav className="bg-white border-b">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex space-x-8">
+      <div className="px-4 sm:px-6 lg:px-8">
+        <div className="flex space-x-8 max-w-screen-2xl mx-auto">
           <NavLink
             to="/tasks"
             className={({ isActive }) =>
