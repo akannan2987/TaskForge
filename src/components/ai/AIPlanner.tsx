@@ -98,7 +98,7 @@ const AIPlanner: React.FC = () => {
         ai_generated: true,
       }));
 
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('tasks')
         .insert(tasksToAdd)
         .select();
@@ -150,7 +150,7 @@ const AIPlanner: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 max-w-7xl">
       <div className="text-center mb-8">
         <div className="flex items-center justify-center mb-4">
           <Brain className="h-8 w-8 text-blue-600 mr-3" />

@@ -26,10 +26,15 @@ const TaskModal: React.FC<TaskModalProps> = ({
   task, 
   loading = false 
 }) => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    title: string;
+    description: string;
+    priority: 'low' | 'medium' | 'high';
+    due_date: string;
+  }>({
     title: '',
     description: '',
-    priority: 'medium' as const,
+    priority: 'medium',
     due_date: '',
   });
 
