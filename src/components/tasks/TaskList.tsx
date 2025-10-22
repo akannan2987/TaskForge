@@ -248,8 +248,7 @@ const TaskList: React.FC = () => {
   }
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 py-6">
-      <div className="w-full max-w-screen-2xl mx-auto">
+    <div className="w-full max-w-4xl px-8 py-6">
       {/* Header */}
       <div className="flex flex-col items-center mb-6">
         <h1 className="text-2xl font-bold text-gray-900 mb-4">My Tasks</h1>
@@ -357,7 +356,6 @@ const TaskList: React.FC = () => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      </div>
     </div>
   );
 };
