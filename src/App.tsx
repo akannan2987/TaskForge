@@ -33,7 +33,7 @@ const AppContent: React.FC = () => {
         <Header />
         <Navigation />
 
-        <main className="flex-1 flex justify-center pb-20 md:pb-6">
+        <main className="flex-1 pb-20 md:pb-6">
           <Routes>
             <Route path="/" element={<Navigate to="/tasks" replace />} />
             <Route path="/tasks" element={<TaskList />} />

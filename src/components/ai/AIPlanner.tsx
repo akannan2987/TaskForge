@@ -150,7 +150,7 @@ const AIPlanner: React.FC = () => {
   };
 
   return (
-    <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-6 max-w-6xl mx-auto">
       <div className="text-center mb-8">
         <div className="flex items-center justify-center mb-4">
           <Brain className="h-8 w-8 text-blue-600 mr-3" />
