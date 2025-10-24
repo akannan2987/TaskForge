@@ -250,8 +250,8 @@ const TaskList: React.FC = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8 py-6">
       {/* Header */}
-      <div className="flex flex-col items-center mb-6">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">My Tasks</h1>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 gap-4">
+        <h1 className="text-2xl font-bold text-gray-900">My Tasks</h1>
 
         {/* Filter buttons */}
         <div className="flex items-center space-x-2">
@@ -286,7 +286,7 @@ const TaskList: React.FC = () => {
       {/* Task list */}
       <div className="space-y-3">
         {filteredTasks.length === 0 ? (
-          <div className="text-center py-12">
+          <div className="text-center py-12 max-w-2xl mx-auto">
             <div className="w-24 h-24 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
               <Plus className="w-10 h-10 text-gray-400" />
             </div>
